@@ -2,10 +2,7 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Workflow } from './entities/workflow.entity';
 import { Repository } from 'typeorm';
-import {
-  CreateWorkflowDto,
-  UpdateWorkflowDto,
-} from '../../../../libs/workflows/src';
+import { CreateWorkflowDto, UpdateWorkflowDto } from '@app/workflows';
 
 @Injectable()
 export class WorkflowsService {

@@ -4,7 +4,7 @@ import { UpdateBuildingDto } from './dto/update-building.dto';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Building } from './entities/building.entity';
 import { Repository } from 'typeorm';
-import { CreateWorkflowDto } from '../../../../libs/workflows/src';
+import { CreateWorkflowDto } from '@app/workflows';
 
 @Injectable()
 export class BuildingsService {
