@@ -1,8 +1,4 @@
-# Base image
-FROM node:20-alpine3.19
-
-# Update system packages to fix vulnerabilities
-RUN apk update && apk upgrade
+FROM node:18-alpine
 
 # Define variables
 ARG APP_NAME
