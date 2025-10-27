@@ -1,4 +1,4 @@
-FROM node:18-alpine
+FROM node:24-alpine3.21
 
 # Define variables
 ARG APP_NAME
@@ -8,6 +8,8 @@ WORKDIR /usr/src/app
 
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 COPY package*.json ./
+
+RUN npm config set legacy-peer-deps true
 
 # Install app dependencies
 RUN npm install
